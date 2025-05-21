@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body">
+
+
+    <!-- Modal Ajout panier-->
+    <div class="modal fade" id="Modal_add_cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Panier mis à jour</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Cet article a bien été ajouté au panier.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal envoyer -->
+    <div class="modal fade" id="Modal_send_message" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> Merci </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                </div>
+                <div class="modal-body">
+                    <p> Votre demande a bien été prise en compte </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <!-- <button type="button" class="btn btn-primary ">Confirmer</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Header qui disparait en mobile -->
+    <div
+        class="d-none d-md-flex flex-row justify-content-around align-items-center display-1 fw-semibold text-white background_color_navbar">
+        <a href="index.html">
+            <img src="assets/img/logo_1.png" class="img-fluid logo_max_width" alt="logo">
+        </a>
+        <p>LILA HAVRAISE</p>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fw-semibold  navbar-dark" style="background-color: #6B4E71;">
+        <!-- <nav class="navbar navbar-expand-lg fw-semibold  navbar-dark" style="background-color: #6B4E71;"> -->
+        <div class="container-fluid d-flex">
+            <a href="index.html">
+                <img class="img-fluid logo_max_width d-md-none" src="assets/img/logo_1.png" alt="logo">
+            </a>
+            <a class="navbar-brand d-none d-md-flex" href="index.html">Accueil</a>
+            <!-- <a class="navbar-brand order-first order-md-last" href="#">Panier
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a> -->
+            <a class="navbar-brand order-first order-md-last" href="panier.html">
+                <div class="cart-container">
+                    <i class="fas fa-shopping-cart cart-icon"></i>
+                    <span id="cart-count" class="cart-badge">2</span>
+                </div>
+                <span class="ms-2">Panier</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link  fs-5 mx-1" href="#">Bouquets du moment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 mx-1" href="#">Abonnements floraux</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 mx-1" href="#">Offres Fête des Mères</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div style="height:10vh"></div>
+
+
+
+
+    <!-- <div class="container d-flex flex-column align-items-center justify-content-center w-sm-75 w-50"> -->
+    <div class="container d-flex flex-column align-items-center justify-content-center w-75">
+
+
+
+
+        <p class="m-0 fs-3">Contactez-nous !</p>
+
+        <div class="w-100 mt-5">
+        <!-- <div class="w-50 mt-5"> -->
+            <label for="inputEmail" class="form-label align-self-start">Votre adresse email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+        </div>
+
+
+        <div class="w-100  mt-3">
+        <!-- <div class="w-50 mt-3"> -->
+            <label for="inputState" class="form-label">Ma demande</label>
+            <select id="inputState" class="form-select">
+                <option selected>Demande d'information</option>
+                <!-- <option>Demande d'information </option> -->
+                <option>Demande pour un événement</option>
+                <option>Question sur la livraison ou les horaires</option>
+                <option>Autre demande </option>
+            </select>
+        </div>
+
+
+        <div class="w-100 mt-3">
+        <!-- <div class="w-50 mt-3"> -->
+            <label for="exampleFormControlTextarea1" class="form-label">Votre message </label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="w-100 mt-3">
+        <!-- <div class="w-50 mt-3"> -->
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    J'accepte d'etre recontacté.
+                </label>
+            </div>
+        </div>
+
+
+        <div class="w-100 mt-3">
+        <!-- <div class="w-50 mt-3"> -->
+            <a href="index.html" class="btn btn-secondary" data-bs-toggle="modal"
+                data-bs-target="#Modal_send_message">Envoyer</a>
+        </div>
+
+        <!-- <a href="index.html" class="btn btn-secondary" id="modal-link">Envoyer</a> -->
+
+    </div>
+
+
+
+
+        <div style="height:15vh"></div>
+
+
+
+
+        <footer>
+            <div
+                class="d-flex flex-column flex-md-row justify-content-around align-items-center fs-3 text-white py-3 background_color_footer">
+                <!-- <div class="d-flex flex-column flex-md-row justify-content-around align-items-center fs-3 text-white py-3"
+            style="background-color: #6B4E71;"> -->
+
+                <div class="d-flex flex-column justify-content-center">
+                    <p class=" m-0 fs-5  fw-semibold">LILA HAVRAISE</p>
+                    <p class=" m-0 fs-6">76 rue des Fleurs</p>
+                    <p class=" m-0 fs-6">76600 Le Havre</p>
+                    <p class="mt-2 mb-0 fs-6">tel : 07 76 76 76 76</p>
+                </div>
+                <div style="height:3vh"></div>
+                <div class="m-0 fs-6 d-flex  flex-column flex-md-row justify-content-around align-items-center">
+                    <a class="px-3 py-1 text-reset text-decoration-none" href="mentions_legales.html">Mentions
+                        légales</a>
+                    <a class="px-3 py-1 text-reset text-decoration-none" href="cgu.html">CGU</a>
+                    <a class="px-3 py-1 text-reset text-decoration-none" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+
+
+        <script src="assets/js/script.js"></script>
+        </body>
+
+</html>
