@@ -44,16 +44,22 @@
 
 
     <!-- Header qui disparait en mobile -->
-    <div class="d-none d-md-flex flex-row justify-content-around align-items-center display-1 fw-semibold text-white background_color_navbar">
-    <!-- <div class="d-none d-md-flex flex-row justify-content-around align-items-center display-1 fw-semibold text-white "
+    <div
+        class="d-none d-md-flex flex-row justify-content-around align-items-center display-1 fw-semibold text-white background_color_navbar">
+        <!-- <div class="d-none d-md-flex flex-row justify-content-around align-items-center display-1 fw-semibold text-white "
         style="background-color: #6B4E71;"> -->
 
 
-        
+
         <!-- <div class="d-none d-lg-flex flex-row justify-content-around align-items-center display-1 fw-semibold text-white "
         style="background-color: #6B4E71;"> -->
 
-        <img src="assets/img/logo_1.png" class="img-fluid logo_max_width" alt="logo">
+        <a href="index.html">
+            <img src="assets/img/logo_1.png" class="img-fluid logo_max_width" alt="logo">
+        </a>
+
+
+        <!-- <img src="assets/img/logo_1.png" class="img-fluid logo_max_width" alt="logo"> -->
         <!-- <img src="assets/img/logo_1.png" class="img-fluid w-25" alt="logo"> -->
         <p>LILA HAVRAISE</p>
     </div>
@@ -61,10 +67,16 @@
     <nav class="navbar navbar-expand-md fw-semibold  navbar-dark" style="background-color: #6B4E71;">
         <!-- <nav class="navbar navbar-expand-lg fw-semibold  navbar-dark" style="background-color: #6B4E71;"> -->
         <div class="container-fluid d-flex">
-            <img class="img-fluid logo_max_width d-md-none" src="assets/img/logo_1.png" alt="logo">
+
+            <a href="index.html">
+                <img class="img-fluid logo_max_width d-md-none" src="assets/img/logo_1.png" alt="logo">
+            </a>
+
+
+            <!-- <img class="img-fluid logo_max_width d-md-none" src="assets/img/logo_1.png" alt="logo"> -->
             <!-- <img class="img-fluid w-25 d-md-none" src="assets/img/logo_1.png" alt="logo"> -->
             <!-- JE FERAIS CA A LA MAIN DANS UN CSS -->
-            <a class="navbar-brand d-none d-md-flex" href="3_accueil.html">Accueil</a>
+            <a class="navbar-brand d-none d-md-flex" href="index.html">Accueil</a>
             <a class="navbar-brand order-first order-md-last" href="#">Panier</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -112,7 +124,8 @@
 
     <div class="d-flex flex-column align-items-center">
 
-        <div class="d-flex flex-column justify-content-around align-items-center border border-5 rounded-4 w-75" style="background-color: #F5DDDD; border-color: #6B4E71 !important;">
+        <div class="d-flex flex-column justify-content-around align-items-center border border-5 rounded-4 w-75"
+            style="background-color: #F5DDDD; border-color: #6B4E71 !important;">
             <!-- trame principale -->
 
             <div class="d-flex flex-column flex-md-row justify-content-center pt-5 pb-2 ps-3 pe-3 w-100">
@@ -121,29 +134,30 @@
                 <div class="w-100">
                     <!-- photo -->
                     <!-- <img class="img-fluid border border-5" src="assets/img/img_1.webp" alt="photo de l'article 1">s -->
-                    <img class="img-fluid border border-2 rounded-4 w-100" src="assets/img/img_1.webp" alt="photo de l'article 1">
+                    <img class="img-fluid border border-2 rounded-4 w-100" src="assets/img/img_1.webp"
+                        alt="photo de l'article 1">
 
 
 
-            <div class="d-flex flex-row justify-content-between w-100 mt-3 mb-3">
-                <!-- 3 photos en bas -->
-                <img class="img-fluid w-25 border border-2 rounded-4" src="assets/img/img_2.webp" alt="photo 1 de l'article"
-                    style="max-width: 100%; height: auto; object-fit: cover;">
-                <img class="img-fluid w-25 border border-2 rounded-4" src="assets/img/img_3.webp" alt="photo 2 de l'article"
-                    style="max-width: 100%; height: auto; object-fit: cover;">
-                <img class="img-fluid w-25 border border-2 rounded-4" src="assets/img/img_4.webp" alt="photo 3 de l'article"
-                    style="max-width: 100%; height: auto; object-fit: cover;">
-            </div>
+                    <div class="d-flex flex-row justify-content-between w-100 mt-3 mb-3">
+                        <!-- 3 photos en bas -->
+                        <img class="img-fluid w-25 border border-2 rounded-4" src="assets/img/img_2.webp"
+                            alt="photo 1 de l'article" style="max-width: 100%; height: auto; object-fit: cover;">
+                        <img class="img-fluid w-25 border border-2 rounded-4" src="assets/img/img_3.webp"
+                            alt="photo 2 de l'article" style="max-width: 100%; height: auto; object-fit: cover;">
+                        <img class="img-fluid w-25 border border-2 rounded-4" src="assets/img/img_4.webp"
+                            alt="photo 3 de l'article" style="max-width: 100%; height: auto; object-fit: cover;">
+                    </div>
 
 
 
                 </div>
 
                 <div class="d-flex flex-column justify-content-start align-items-start ms-3 pe-3 w-100">
-                <!-- <div class="d-flex flex-column align-items-start ms-3 me-2 w-25"> -->
+                    <!-- <div class="d-flex flex-column align-items-start ms-3 me-2 w-25"> -->
                     <!-- justify-content-around -->
                     <!-- colonne droite -->
-                    <p class="fs-3">Bouquet coloré</p>                    
+                    <p class="fs-3">Bouquet coloré</p>
                     <!-- <p>(notes)</p> -->
                     <div class="d-flex align-items-center mb-3">
                         <div class="text-warning">
@@ -159,11 +173,12 @@
 
 
                     <div class="">
-                        <p class="text-justify">C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau
-                        bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de
-                        fleurs coloré. </p>
+                        <p class="text-justify">C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de fleurs
+                            coloré. C'est un beau
+                            bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de
+                            fleurs coloré. </p>
                     </div>
-                    
+
                     <!-- <button class="w-100 text-start">Quantité</button>
                     <input type="number" class="form-control" value="1" min="1"> -->
                     <p class=" fs-4">59.99 euros</p>
@@ -175,24 +190,13 @@
                         <input type="number" class="form-control w-50 pe-0" value="1" min="1">
                     </div>
 
-                    <button class=" text-start" data-bs-toggle="modal" data-bs-target="#Modal_add_cart">Ajouter au panier</button>
+                    <button class=" text-start" data-bs-toggle="modal" data-bs-target="#Modal_add_cart">Ajouter au
+                        panier</button>
 
 
                 </div>
 
             </div>
-
-            <!-- <div class="d-flex flex-row justify-content-around w-75 mt-3 mb-3"> -->
-                <!-- 3 photos en bas -->
-                <!-- <img class="img-fluid w-25 rounded-4" src="assets/img/img_1.webp" alt="photo 1 de l'article"
-                    style="max-width: 100%; height: auto; object-fit: cover;">
-                <img class="img-fluid w-25 rounded-4" src="assets/img/img_1.webp" alt="photo 2 de l'article"
-                    style="max-width: 100%; height: auto; object-fit: cover;">
-                <img class="img-fluid w-25 rounded-4" src="assets/img/img_1.webp" alt="photo 3 de l'article"
-                    style="max-width: 100%; height: auto; object-fit: cover;">
-            </div> -->
-
-
 
         </div>
 
@@ -229,12 +233,13 @@
 
 
     <footer>
-        <div class="d-flex flex-column flex-md-row justify-content-around align-items-center fs-3 text-white py-3 background_color_footer">
-        <!-- <div class="d-flex flex-column flex-md-row justify-content-around align-items-center fs-3 text-white py-3"
+        <div
+            class="d-flex flex-column flex-md-row justify-content-around align-items-center fs-3 text-white py-3 background_color_footer">
+            <!-- <div class="d-flex flex-column flex-md-row justify-content-around align-items-center fs-3 text-white py-3"
             style="background-color: #6B4E71;"> -->
 
 
-            
+
             <div class="d-flex flex-column justify-content-center">
                 <p class=" m-0 fs-5  fw-semibold">LILA HAVRAISE</p>
                 <p class=" m-0 fs-6">76 rue des Fleurs</p>
@@ -261,11 +266,3 @@
     </body>
 
 </html>
-
-
-
-
-
-
-
-

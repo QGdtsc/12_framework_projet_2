@@ -32,7 +32,7 @@
 
 
 .logo_max_width {
-    max-width: 15vw;
+    max-width: 10vw;
 }
 
 
@@ -59,5 +59,28 @@
 
 
 
+.cart-container {
+    position: relative;
+    display: inline-block;
+}
 
+.cart-icon {
+    font-size: 24px;
+    color: white;
+}
 
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}

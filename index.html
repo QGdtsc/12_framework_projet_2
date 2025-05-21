@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body">
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="Modal_add_cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Panier mis à jour</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Cet article a bien été ajouté au panier.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Header qui disparait en mobile -->
+    <div
+        class="d-none d-md-flex flex-row justify-content-around align-items-center display-1 fw-semibold text-white background_color_navbar">
+        <a href="index.html">
+            <img src="assets/img/logo_1.png" class="img-fluid logo_max_width" alt="logo">
+        </a>
+        <p>LILA HAVRAISE</p>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fw-semibold  navbar-dark" style="background-color: #6B4E71;">
+        <!-- <nav class="navbar navbar-expand-lg fw-semibold  navbar-dark" style="background-color: #6B4E71;"> -->
+        <div class="container-fluid d-flex">
+            <a href="index.html">
+                <img class="img-fluid logo_max_width d-md-none" src="assets/img/logo_1.png" alt="logo">
+            </a>
+            <a class="navbar-brand d-none d-md-flex" href="index.html">Accueil</a>
+            <!-- <a class="navbar-brand order-first order-md-last" href="#">Panier
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a> -->
+            <a class="navbar-brand order-first order-md-last" href="panier.html">
+                <div class="cart-container">
+                    <i class="fas fa-shopping-cart cart-icon"></i>
+                    <span id="cart-count" class="cart-badge">2</span>
+                </div>
+                <span class="ms-2">Panier</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bouquets du moment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Abonnements floraux</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Offres Fête des Mères</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+
+    <div style="height:1vh"></div>
+
+    <div class="carousel-container d-none d-md-flex ">
+        <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/img_1.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/img_2.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/img_3.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/img_4.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/img_5.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/img_6.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- LIGNE NUMERO 1 -->
+    <!--  -->
+    <!--  -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-5 mx-3">
+        <!-- ITEM 1 -->
+        <!--  -->
+        <!--  -->
+        <div class="d-flex flex-column gap-1 border border-5 m-3 p-3 w-100">
+            <div class="d-flex flex-row justify-content-center align-items-center w-100">
+                <!-- photo -->
+                <div class="d-flex flex-row justify-content-center align-items-center w-100">
+                    <a href="6_article_detail_maj.html"><img src="assets/img/img_1.webp"
+                            class="img-fluid border border-2 w-100" alt="photo de l'article 1"></a>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <!-- description et prix -->
+                <div
+                    class="border border-2 d-flex flex-row justify-content-center align-items-center my-2 fs-4 w-50 mx-md-auto">
+                    59.99 €
+                </div>
+                <div class="fs-3">
+                    <p>Bouquet de fleurs coloré</p>
+                </div>
+                <div class="text-justify"> <!-- utilisation d'une classe personnalisée -->
+                    <p>C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau
+                        bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de
+                        fleurs coloré. </p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row justify-content-between">
+                <!-- note et bouton -->
+                <div class="d-flex flex-column align-item-md-start mb-3">
+                    <div class="text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                    </div>
+                    <span class="ms-2">(152 avis)</span>
+                </div>
+                <div class="d-flex flex-row justify-content-end justify-content-md-end mb-3">
+                    <button class="" data-bs-toggle="modal" data-bs-target="#Modal_add_cart">Ajouter au
+                        panier</button>
+                </div>
+            </div>
+        </div>
+        <!-- FIN ITEM 1 -->
+        <!--  -->
+        <!--  -->
+
+        <div class="d-flex flex-column gap-1 border border-5 m-3 p-3 w-100">
+            <div class="d-flex flex-row justify-content-center align-items-center w-100">
+                <!-- photo -->
+                <div class="d-flex flex-row justify-content-center align-items-center w-100">
+                    <a href=""><img src="assets/img/img_2.webp" class="img-fluid border border-2 w-100"
+                            alt="photo de l'article 1"></a>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <!-- description et prix -->
+                <div
+                    class="border border-2 d-flex flex-row justify-content-center align-items-center my-2 fs-4 w-50 mx-md-auto">
+                    49.99 €
+                </div>
+                <div class="fs-3">
+                    <p>Bouquet aux notes orangées</p>
+                </div>
+                <div class="text-justify"> <!-- utilisation d'une classe personnalisée -->
+                    <p>C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau
+                        bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de
+                        fleurs coloré. </p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row justify-content-between">
+                <!-- note et bouton -->
+                <div class="d-flex flex-column align-item-md-start mb-3">
+                    <div class="text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <span class="ms-2">(89 avis)</span>
+                </div>
+                <div class="d-flex flex-row justify-content-end justify-content-md-end mb-3">
+                    <button class="" data-bs-toggle="modal" data-bs-target="#Modal_add_cart">Ajouter au
+                        panier</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column gap-1 border border-5 m-3 p-3 w-100">
+            <div class="d-flex flex-row justify-content-center align-items-center w-100">
+                <!-- photo -->
+                <div class="d-flex flex-row justify-content-center align-items-center w-100">
+                    <a href=""><img src="assets/img/img_3.webp" class="img-fluid border border-2 w-100"
+                            alt="photo de l'article 1"></a>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <!-- description et prix -->
+                <div
+                    class="border border-2 d-flex flex-row justify-content-center align-items-center my-2 fs-4 w-50 mx-md-auto">
+                    69.99 €
+                </div>
+                <div class="fs-3">
+                    <p>Bouquet rose et jaune</p>
+                </div>
+                <div class="text-justify"> <!-- utilisation d'une classe personnalisée -->
+                    <p>C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau
+                        bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de
+                        fleurs coloré. </p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row justify-content-between">
+                <!-- note et bouton -->
+                <div class="d-flex flex-column align-item-md-start mb-3">
+                    <div class="text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                    </div>
+                    <span class="ms-2">(97 avis)</span>
+                </div>
+                <div class="d-flex flex-row justify-content-end justify-content-md-end mb-3">
+                    <!-- <div class="align-self-end d-flex flex-row justify-content-center justify-content-md-end w-100 w-md-50 mb-3"> -->
+                    <button class="" data-bs-toggle="modal" data-bs-target="#Modal_add_cart">Ajouter au
+                        panier</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- LIGNE NUMERO 2 -->
+    <!--  -->
+    <!--  -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-5 mx-3">
+        <div class="d-flex flex-column gap-1 border border-5 m-3 p-3 w-100">
+            <div class="d-flex flex-row justify-content-center align-items-center w-100">
+                <!-- photo -->
+                <div class="d-flex flex-row justify-content-center align-items-center w-100">
+                    <a href=""><img src="assets/img/img_4.webp" class="img-fluid border border-2 w-100"
+                            alt="photo de l'article 1"></a>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <!-- description et prix -->
+                <div
+                    class="border border-2 d-flex flex-row justify-content-center align-items-center my-2 fs-4 w-50 mx-md-auto">
+                    39.99 €
+                </div>
+                <div class="fs-3">
+                    <p>Bouquet d'herbes et de fleurs</p>
+                </div>
+                <div class="text-justify"> <!-- utilisation d'une classe personnalisée -->
+                    <p>C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau
+                        bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de
+                        fleurs coloré. </p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row justify-content-between">
+                <!-- note et bouton -->
+                <div class="d-flex flex-column align-item-md-start mb-3">
+                    <div class="text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                    </div>
+                    <span class="ms-2">(112 avis)</span>
+                </div>
+                <div class="d-flex flex-row justify-content-end justify-content-md-end mb-3">
+                    <button class="" data-bs-toggle="modal" data-bs-target="#Modal_add_cart">Ajouter au
+                        panier</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column gap-1 border border-5 m-3 p-3 w-100">
+            <div class="d-flex flex-row justify-content-center align-items-center w-100">
+                <!-- photo -->
+                <div class="d-flex flex-row justify-content-center align-items-center w-100">
+                    <a href=""><img src="assets/img/img_7.jpg" class="img-fluid border border-2 w-100"
+                            alt="photo de l'article 1"></a>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <!-- description et prix -->
+                <div
+                    class="border border-2 d-flex flex-row justify-content-center align-items-center my-2 fs-4 w-50 mx-md-auto">
+                    49.99 €
+                </div>
+                <div class="fs-3">
+                    <p>Bouquet blanc</p>
+                </div>
+                <div class="text-justify"> <!-- utilisation d'une classe personnalisée -->
+                    <p>C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau
+                        bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de
+                        fleurs coloré. </p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row justify-content-between">
+                <!-- note et bouton -->
+                <div class="d-flex flex-column align-item-md-start mb-3">
+                    <div class="text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <span class="ms-2">(117 avis)</span>
+                </div>
+                <div class="d-flex flex-row justify-content-end justify-content-md-end mb-3">
+                    <button class="" data-bs-toggle="modal" data-bs-target="#Modal_add_cart">Ajouter au
+                        panier</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column gap-1 border border-5 m-3 p-3 w-100">
+            <div class="d-flex flex-row justify-content-center align-items-center w-100">
+                <!-- photo -->
+                <div class="d-flex flex-row justify-content-center align-items-center w-100">
+                    <a href=""><img src="assets/img/img_6.webp" class="img-fluid border border-2 w-100"
+                            alt="photo de l'article 1"></a>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <!-- description et prix -->
+                <div
+                    class="border border-2 d-flex flex-row justify-content-center align-items-center my-2 fs-4 w-50 mx-md-auto">
+                    69.99 €
+                </div>
+                <div class="fs-3">
+                    <p>Bouquet élégant</p>
+                </div>
+                <div class="text-justify"> <!-- utilisation d'une classe personnalisée -->
+                    <p>C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau
+                        bouquet de fleurs coloré. C'est un beau bouquet de fleurs coloré. C'est un beau bouquet de
+                        fleurs coloré. </p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row justify-content-between">
+                <!-- note et bouton -->
+                <div class="d-flex flex-column align-item-md-start mb-3">
+                    <div class="text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                    </div>
+                    <span class="ms-2">(165 avis)</span>
+                </div>
+                <div class="d-flex flex-row justify-content-end justify-content-md-end mb-3">
+                    <button class="" data-bs-toggle="modal" data-bs-target="#Modal_add_cart">Ajouter au
+                        panier</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="height:2vh"></div>
+
+
+    <footer>
+        <div
+            class="d-flex flex-column flex-md-row justify-content-around align-items-center fs-3 text-white py-3 background_color_footer">
+            <!-- <div class="d-flex flex-column flex-md-row justify-content-around align-items-center fs-3 text-white py-3"
+            style="background-color: #6B4E71;"> -->
+
+            <div class="d-flex flex-column justify-content-center">
+                <p class=" m-0 fs-5  fw-semibold">LILA HAVRAISE</p>
+                <p class=" m-0 fs-6">76 rue des Fleurs</p>
+                <p class=" m-0 fs-6">76600 Le Havre</p>
+                <p class="mt-2 mb-0 fs-6">tel : 07 76 76 76 76</p>
+            </div>
+            <div style="height:3vh"></div>
+            <div class="m-0 fs-6 d-flex  flex-column flex-md-row justify-content-around align-items-center">
+                <a class="px-3 py-1 text-reset text-decoration-none" href="">Mentions légales</a>
+                <a class="px-3 py-1 text-reset text-decoration-none" href="">CGU</a>
+                <a class="px-3 py-1 text-reset text-decoration-none" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
