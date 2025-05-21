@@ -1,0 +1,63 @@
+.carousel-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.carousel {
+    height: 100%;
+    width: 100vw;
+}
+
+.carousel-inner {
+    max-height: 50vh;
+}
+
+
+.carousel-item img {
+    height: 50vh;
+    object-fit: cover;
+}
+
+
+
+
+
+
+.text-justify {
+    text-align: justify;
+}
+
+
+.logo_max_width {
+    max-width: 15vw;
+}
+
+
+
+
+/* .background_color_navbar {
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 5%, rgba(107, 78, 113, 1) 70%, rgba(107, 78, 113, 1) 100%);
+} */
+
+.background_color_navbar {
+    background: #6B4E71;
+}
+
+/* .background_color_footer {
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(107, 78, 113, 1) 70%, rgba(107, 78, 113, 1) 100%);
+} */
+
+.background_color_footer {
+    background: #6B4E71;
+    }
+
+
+
+
+
+
